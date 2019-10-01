@@ -18,12 +18,12 @@ class BlogController extends AbstractController
     }
 
     /**
-     * @Route("/blog/{slug}", name="blog-list")
+     * @Route("/blog/{slug}", name="article")
      */
     public function list($slug)
     {
     return $this->render('blog/blog.html.twig', [
-       'title' => $slug,
+       'title' => ucwords(str_replace('-', ' ', $slug)),
     ]);
     }
 
@@ -32,6 +32,6 @@ class BlogController extends AbstractController
      */
     public function signUp()
     {
-        return new Response("<h1>dziala</h1>");
+        return $this-> render('blog/signup.html.twig');
     }
 }
