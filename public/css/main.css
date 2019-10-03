@@ -26,9 +26,6 @@ body {
 
 
 .article-container {
-    /*position:relative;*/
-    /*height:auto !important;*/
-    /*min-height:100%;*/
     width: 100%;
     display: inline-flex;
     align-items: center;
