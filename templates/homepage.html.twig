@@ -7,30 +7,17 @@
         <div class="row">
             <div class="col-md-6">
 
-                <div class="article-container my-4">
-                    <a href="{{ path('article', {slug: 'why-do-asteroids-taste-like-bacon'}) }}" class="wid-100">
-                        <img class="zdjecie" src="https://via.placeholder.com/140x140">
-                        <div class="d-inline-block pl-3 align-middle">
-                            <span>Why do Asteroids Taste Like Bacon?</span>
-                        </div>
-                    </a>
-                </div>
+                {% for article in articles %}
                 <div class="article-container my-3">
                     <a href="#" class="wid-100">
                         <img class="zdjecie" src="https://via.placeholder.com/140x140">
                         <div class="d-inline-block pl-3 align-middle">
-                            <span>Why do Asteroids Taste Like Bacon?</span>
+                            <span>{{ article.title }}</span>
                         </div>
                     </a>
+                    <span>{{ article.publishedAt|ago }}</span>
                 </div>
-                <div class="article-container my-4">
-                    <a href="#" class="wid-100">
-                        <img class="zdjecie" src="https://via.placeholder.com/140x140">
-                        <div class="d-inline-block pl-3 align-middle">
-                            <span>Why do Asteroids Taste Like Bacon?</span>
-                        </div>
-                    </a>
-                </div>
+                {% endfor %}
 
 
 

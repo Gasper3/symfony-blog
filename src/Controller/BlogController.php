@@ -15,8 +15,11 @@ class BlogController extends AbstractController
     /**
      * @Route("/", name="homepage")
      */
-    public function homepage() {
-        return $this->render('homepage.html.twig');
+    public function homepage(ArticleRepository $repository) {
+        $articles = $repository->orderByPublishedAt();
+        return $this->render('homepage.html.twig', [
+            'articles' => $articles,
+        ]);
     }
 
     /**
