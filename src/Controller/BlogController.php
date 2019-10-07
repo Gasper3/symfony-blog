@@ -16,6 +16,7 @@ class BlogController extends AbstractController
      * @Route("/", name="homepage")
      */
     public function homepage(ArticleRepository $repository) {
+        //pobranie wszystkich artykulow sortowanych przez date publikacji
         $articles = $repository->orderByPublishedAt();
         return $this->render('homepage.html.twig', [
             'articles' => $articles,
@@ -27,6 +28,7 @@ class BlogController extends AbstractController
      */
     public function list($slug, ArticleRepository $repository)
     {
+        //pobranie jednego artykulu
         /** @var Article $article */
         $article = $repository->findOneBy(['slug' => $slug]);
 

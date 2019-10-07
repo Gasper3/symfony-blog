@@ -18,6 +18,7 @@ class BlogAdminController extends AbstractController
      */
     public function new(EntityManagerInterface $em)
     {
+        //tworzenie arytulu
         $article = new Article();
         $article->setTitle('Kurde działa1234')
             ->setContent('Nie wierzę w to :D')
