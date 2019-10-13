@@ -20,10 +20,10 @@ class BlogAdminController extends AbstractController
     {
         //tworzenie arytulu
         $article = new Article();
-        $article->setTitle('Kurde działa1234')
-            ->setContent('Nie wierzę w to :D')
+        $article->setTitle('Nowy wpis'.rand(1,100))
+            ->setContent('Treść')
             ->setPublishedAt(new \DateTime())
-            ->setSlug('kacper'.rand(1,100));
+            ->setSlug('wpis'.rand(1,100));
         $em->persist($article);
         $em->flush();
         return new Response(sprintf(
