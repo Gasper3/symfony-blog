@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="06d37cb4-dcc8-4e54-bab1-61148137636c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BlogAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogAdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ArticleFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ArticleFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/blog.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/blog.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +138,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -192,6 +199,14 @@
       <workItem from="1570976749853" duration="1308000" />
       <workItem from="1571160830100" duration="1788000" />
       <workItem from="1571162640248" duration="2115000" />
+      <workItem from="1571165401135" duration="122000" />
+      <workItem from="1571686374972" duration="1515000" />
+      <workItem from="1571687913152" duration="545000" />
+      <workItem from="1572589518594" duration="48000" />
+      <workItem from="1573309647385" duration="33000" />
+      <workItem from="1574972529088" duration="446000" />
+      <workItem from="1575220276357" duration="1801000" />
+      <workItem from="1575222100221" duration="2293000" />
     </task>
     <servers />
   </component>

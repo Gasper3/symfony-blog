@@ -18,7 +18,7 @@ class BlogAdminController extends AbstractController
      */
     public function new(EntityManagerInterface $em)
     {
-        //tworzenie arytkulu
+        //creating article
         $article = new Article();
         $article->setTitle('Nowy wpis'.rand(1,100))
             ->setContent('Treść')
