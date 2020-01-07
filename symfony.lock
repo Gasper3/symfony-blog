@@ -114,6 +114,9 @@
     "knplabs/knp-time-bundle": {
         "version": "v1.9.1"
     },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.0.0"
+    },
     "michelf/php-markdown": {
         "version": "1.9.0"
     },
@@ -395,6 +398,9 @@
     },
     "twig/twig": {
         "version": "v2.11.3"
+    },
+    "webimpress/safe-writer": {
+        "version": "2.0.0"
     },
     "zendframework/zend-code": {
         "version": "3.3.2"

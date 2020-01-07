@@ -28,6 +28,7 @@ class ArticleRepository extends ServiceEntityRepository
         return $this->createQueryBuilder('a')
             ->andWhere('a.publishedAt IS NOT NULL')
             ->orderBy('a.publishedAt', 'DESC')
+            ->setMaxResults(3)
             ->getQuery()
             ->getResult()
         ;
