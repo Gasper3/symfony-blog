@@ -24,6 +24,7 @@ class BlogAdminController extends AbstractController
             ->setContent('Treść')
             ->setPublishedAt(new \DateTime())
             ->setSlug('wpis'.rand(1,100));
+
         $em->persist($article);
         $em->flush();
         return new Response(sprintf(
