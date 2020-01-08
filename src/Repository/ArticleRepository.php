@@ -31,7 +31,7 @@ class ArticleRepository extends ServiceEntityRepository
             ->setMaxResults(3)
             ->getQuery()
             ->getResult()
-        ;
+            ;
     }
 
 
