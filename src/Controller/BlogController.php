@@ -6,6 +6,7 @@ namespace App\Controller;
 
 use App\Entity\Article;
 use App\Repository\ArticleRepository;
+use App\Repository\CommentRepository;
 use Knp\Bundle\MarkdownBundle\Helper\MarkdownHelper;
 use Knp\Bundle\MarkdownBundle\MarkdownParserInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -30,9 +31,9 @@ class BlogController extends AbstractController
     /**
      * @Route("/blog/{slug}", name="article")
      */
-    public function list(Article $article, MarkdownParserInterface $markdownParser)
+    public function show(Article $article, MarkdownParserInterface $markdownParser)
     {
-        return $this->render('blog/blog.html.twig', [
+        return $this->render('blog/show.html.twig', [
             'article' => $article,
         ]);
     }
