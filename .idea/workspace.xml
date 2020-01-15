@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06d37cb4-dcc8-4e54-bab1-61148137636c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/blog/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ArticleFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ArticleFixture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/blog.html.twig" beforeDir="false" />
-    </list>
+    <list default="true" id="06d37cb4-dcc8-4e54-bab1-61148137636c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +211,7 @@
       <workItem from="1578508490225" duration="1792000" />
       <workItem from="1578510304914" duration="1791000" />
       <workItem from="1578512115146" duration="330000" />
-      <workItem from="1578514629635" duration="1417000" />
+      <workItem from="1578514629635" duration="1511000" />
     </task>
     <servers />
   </component>
