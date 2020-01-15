@@ -14,6 +14,7 @@ It's simple blog (will be in future :D)
 ## Technologies
 * PHP
 * Symfony4
+* Bootstrap
 
 ## TODO
 * page for editing posts
