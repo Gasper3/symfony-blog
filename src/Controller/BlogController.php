@@ -20,7 +20,6 @@ class BlogController extends AbstractController
      */
     public function homepage(ArticleRepository $repository)
     {
-        //articles ordered by publish date
         $articles = $repository->orderByPublishedAt();
 
         return $this->render('homepage.html.twig', [

@@ -17,12 +17,11 @@
             <hr width="100%">
         </div>
         {% for comment in article.comments %}
-            <div class="col-md-6 p-0 mb-2">
-                <div class="col-md-8 p-0">
-                    {{ comment.content }}
-                </div>
-                <div class="col-md-4 p-0">
-                    {{ comment.authorName }}
+            <div class="row mt-3">
+                <img src="{{ asset('images/user.png') }}" class="user-img">
+                <div class="col-md-8">
+                    <div class="col-12 font-weight-bold">{{ comment.authorName }}</div>
+                    <div class="col-12">{{ comment.content }}</div>
                 </div>
             </div>
         {% endfor %}
