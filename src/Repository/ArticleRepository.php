@@ -23,15 +23,23 @@ class ArticleRepository extends ServiceEntityRepository
       * @return Article[]
       */
 
-    public function orderByPublishedAt()
+    public function orderByPublishedAtMaxThree()
     {
         return $this->createQueryBuilder('a')
             ->andWhere('a.publishedAt IS NOT NULL')
             ->orderBy('a.publishedAt', 'DESC')
             ->setMaxResults(3)
             ->getQuery()
-            ->getResult()
-            ;
+            ->getResult();
+    }
+
+    public function orderByPublishedAt()
+    {
+        return $this->createQueryBuilder('a')
+            ->andWhere('a.publishedAt IS NOT NULL')
+            ->orderBy('a.publishedAt', 'DESC')
+            ->getQuery()
+            ->getResult();
     }
 
 

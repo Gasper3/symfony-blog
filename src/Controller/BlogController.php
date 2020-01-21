@@ -20,7 +20,7 @@ class BlogController extends AbstractController
      */
     public function homepage(ArticleRepository $repository)
     {
-        $articles = $repository->orderByPublishedAt();
+        $articles = $repository->orderByPublishedAtMaxThree();
 
         return $this->render('homepage.html.twig', [
             'articles' => $articles,
@@ -43,5 +43,16 @@ class BlogController extends AbstractController
     public function signUp()
     {
         return $this-> render('blog/signup.html.twig');
+    }
+
+    /**
+     * @Route("/articles", name="allArticles")
+     */
+    public function showAll(ArticleRepository $repository)
+    {
+        $articles = $repository->orderByPublishedAt();
+        return $this->render('blog/all_articles.html.twig', [
+            'articles' => $articles,
+        ]);
     }
 }
