@@ -13,8 +13,8 @@ class ArticleFixture extends BaseFixture
         $this->createMany(Article::class, 10, function(Article $article, $count) {
             $article->setTitle($this->faker->sentence())
                 ->setPublishedAt($this->faker->dateTimeBetween('-10 days', '-1 days'))
-                ->setContent($this->faker->text($maxNbChars=1000))
-                ->setImageFilename($this->faker->imageUrl($width=200, $height=140));
+                ->setContent($this->faker->text($maxNbChars=3000))
+                ->setImageFilename($this->faker->imageUrl($width=100, $height=100));
         });
 
         $manager->flush();

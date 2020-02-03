@@ -28,7 +28,7 @@ class BlogController extends AbstractController
     }
 
     /**
-     * @Route("/blog/{slug}", name="article")
+     * @Route("/article/{slug}", name="article")
      */
     public function show(Article $article, MarkdownParserInterface $markdownParser)
     {

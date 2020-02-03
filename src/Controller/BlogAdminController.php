@@ -13,9 +13,16 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class BlogAdminController extends AbstractController
 {
+    /**
+     * @Route("/admin/article", name="admin_article")
+     */
+    public function index()
+    {
+    return $this->render('article_admin/index.html.twig');
+    }
 
     /**
-     * @Route("/admin/new", name="admin_new_article")
+     * @Route("/admin/article/new", name="admin_new_article")
      */
     public function new(EntityManagerInterface $em)
     {
@@ -39,6 +46,6 @@ class BlogAdminController extends AbstractController
      */
     public function create()
     {
-        return $this->render('blog/create.html.twig');
+        return $this->render('article_admin:create.html.twig');
     }
 }
