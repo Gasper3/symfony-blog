@@ -41,3 +41,9 @@ body {
     width: 100%;
     background-color: #fff;
 }
+
+.articleImg {
+    min-width: 160px;
+    max-width: 160px;
+    height: auto;
+}
