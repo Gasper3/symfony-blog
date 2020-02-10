@@ -46,6 +46,6 @@ class BlogAdminController extends AbstractController
      */
     public function create()
     {
-        return $this->render('article_admin:create.html.twig');
+        return $this->render('article_admin/create.html.twig');
     }
 }
