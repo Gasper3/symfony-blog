@@ -14,7 +14,8 @@ class ArticleFixture extends BaseFixture
             $article->setTitle($this->faker->sentence())
                 ->setPublishedAt($this->faker->dateTimeBetween('-10 days', '-1 days'))
                 ->setContent($this->faker->text($maxNbChars=3000))
-                ->setImageFilename($this->faker->imageUrl($width=100, $height=100));
+                ->setImageFilename($this->faker->imageUrl($width=100, $height=100))
+                ->setAuthor('Kacper');
         });
 
         $manager->flush();
