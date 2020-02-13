@@ -18,7 +18,7 @@ class BlogAdminController extends AbstractController
      */
     public function index()
     {
-    return $this->render('article_admin/index.html.twig');
+        return $this->render('article_admin/index.html.twig');
     }
 
     /**

@@ -1,0 +1,20 @@
+.form-login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+}
+
+.checkbox {
+    width: 100%;
+    text-align: left;
+    margin-top: 0.5rem;
+}
+
+#inputEmail {
+    border-radius: 5px 5px 0 0;
+}
+
+#inputPassword {
+    border-radius: 0 0 5px 5px;
+}

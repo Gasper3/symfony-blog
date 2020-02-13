@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06d37cb4-dcc8-4e54-bab1-61148137636c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/security/signup.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ArticleFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ArticleFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BlogAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogAdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/signup.html.twig" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,6 +157,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/security" />
       <recent name="$PROJECT_DIR$/templates/article_admin" />
       <recent name="$PROJECT_DIR$/templates" />
     </key>
@@ -259,7 +264,9 @@
       <workItem from="1581360942110" duration="1802000" />
       <workItem from="1581362764379" duration="1145000" />
       <workItem from="1581444508061" duration="1847000" />
-      <workItem from="1581446379188" duration="1228000" />
+      <workItem from="1581446379188" duration="1547000" />
+      <workItem from="1581619090571" duration="1792000" />
+      <workItem from="1581620901706" duration="1599000" />
     </task>
     <servers />
   </component>

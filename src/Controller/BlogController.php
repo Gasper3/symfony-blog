@@ -37,13 +37,6 @@ class BlogController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/sign_up", name="sign_up")
-     */
-    public function signUp()
-    {
-        return $this-> render('blog/signup.html.twig');
-    }
 
     /**
      * @Route("/articles", name="allArticles")
