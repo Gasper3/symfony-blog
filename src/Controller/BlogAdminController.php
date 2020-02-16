@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class BlogAdminController extends AbstractController
 {
     /**
-     * @Route("/admin/article", name="admin_article")
+     * @Route("/admin", name="admin_article")
      */
     public function index()
     {
