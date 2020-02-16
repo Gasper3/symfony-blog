@@ -12,8 +12,7 @@
 It's simple blog (will be in future :D)
 
 ## Technologies
-* PHP
-* Symfony4
+* Symfony 4
 * Bootstrap
 
 ## TODO
