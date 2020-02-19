@@ -9,7 +9,7 @@
             {% for article in articles %}
                 <div class="col-md-8 article-container my-2">
                     <div class="col-3 p-0">
-                        <img src="{{ asset('images/space.jpg') }}" class="articleImg">
+                        <img src="images/article/{{ article.imageFileName }}" class="articleImg">
                     </div>
                     <div class="col-7">
                         <a href="{{ path('article', {slug: article.slug}) }}">
