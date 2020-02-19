@@ -4,10 +4,10 @@
 
 {% block content_body %}
     <div class="row mx-auto">
-        <div class="col-2 d-flex justify-content-center">
-            <img src="{{ asset('images/space.jpg') }}">
+        <div class="col-3 d-flex justify-content-center">
+            <img src="/images/article/{{ article.imageFilename }}">
         </div>
-        <div class="col-10">
+        <div class="col-9">
             <h1>{{ article.title }}</h1>
         </div>
     </div>
