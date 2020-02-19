@@ -22,7 +22,7 @@ class BlogAdminController extends AbstractController
     }
 
     /**
-     * @Route("/admin/article/new", name="admin_new_article")
+     * @Route("/admin/article/new", name="admin_article_new")
      */
     public function new(EntityManagerInterface $em)
     {
