@@ -5,9 +5,9 @@
 {% block body %}
 {# TODO: change presentation of articles #}
     <div class="container">
-        <div class="row mx-auto flex-column">
+        <div class="row mx-auto">
             {% for article in articles %}
-                <div class="col-md-8 article-container my-2">
+                <div class="col-md-6 article-container m-2">
                     <div class="col-3 p-0">
                         <img src="images/article/{{ article.imageFileName }}" class="articleImg">
                     </div>
@@ -16,7 +16,7 @@
                             <span>{{ article.title }}</span>
                         </a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 p-0">
                         <span>{{ article.publishedAt|ago }}</span>
                     </div>
                 </div>

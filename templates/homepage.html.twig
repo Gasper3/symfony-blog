@@ -6,7 +6,7 @@
 {# TODO: make visual changes #}
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 {% for article in articles %}
                 <div class="article-container my-3">
                     <div class="col-3 p-0">
@@ -17,7 +17,7 @@
                             <span>{{ article.title }}</span>
                         </a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 p-0">
                         <span>{{ article.publishedAt|ago }}</span>
                     </div>
                 </div>

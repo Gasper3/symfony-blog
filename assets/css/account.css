@@ -1,0 +1,23 @@
+.user-avatar {
+    background-color: #744d91;
+    padding: 0 !important;
+}
+
+.user-avatar img {
+    max-width: 100%;
+}
+
+.user-pad {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-pad a {
+    width: 15%;
+}
+
+.user-bg {
+    background-color: #8959A8;
+}
+

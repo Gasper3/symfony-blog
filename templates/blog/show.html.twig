@@ -5,7 +5,7 @@
 {% block content_body %}
     <div class="row mx-auto">
         <div class="col-3 d-flex justify-content-center">
-            <img src="/images/article/{{ article.imageFilename }}">
+            <img class="articleImg" src="/images/article/{{ article.imageFilename }}">
         </div>
         <div class="col-9">
             <h1>{{ article.title }}</h1>
@@ -19,7 +19,7 @@
         <hr width="100%">
     </div>
     {% for comment in article.nonDeletedComments %}
-        <div class="row my-4">
+        <div class="row my-4 mx-auto">
             <img src="{{ asset('images/user2.png') }}" class="user-img">
             <div class="col-md-8">
                 <div class="col-8">

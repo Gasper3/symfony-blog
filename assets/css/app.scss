@@ -45,7 +45,11 @@ body {
 }
 
 .articleImg {
-  min-width: 160px;
-  max-width: 160px;
+  max-width: 100%;
   height: auto;
+}
+
+.nav-profile-img {
+  width: 50px;
+  border: 1px solid #fff;
 }
