@@ -4,9 +4,10 @@ namespace App\DataFixtures;
 
 use App\Entity\Article;
 use App\Entity\Comment;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 
-class ArticleFixture extends BaseFixture
+class ArticleFixture extends BaseFixture implements DependentFixtureInterface
 {
     protected function loadData(ObjectManager $manager)
     {
@@ -20,11 +21,17 @@ class ArticleFixture extends BaseFixture
                 $article->setPublishedAt($this->faker->dateTimeBetween('-10 days', '-1 days'));
             }
 
-            $article->setAuthor('Kacper')
-                ->setImageFilename('space.jpg');
+            $article->setAuthor($this->getRandomReference('main_users'));
+            $article->setImageFilename('space.jpg');
             return $article;
         });
 
         $manager->flush();
     }
+
+    public function getDependencies()
+    {
+        return [UserFixture::class];
+    }
+
 }
