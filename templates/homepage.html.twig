@@ -16,6 +16,7 @@
                         <a href="{{ path('article', {slug: article.slug}) }}">
                             <span>{{ article.title }}</span>
                         </a>
+                        <p>{{ article.author }}</p>
                     </div>
                     <div class="col-2 p-0">
                         <span>{{ article.publishedAt|ago }}</span>
