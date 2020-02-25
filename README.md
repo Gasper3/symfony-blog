@@ -1,5 +1,5 @@
 # BLOG
-> First project in Symfony4!! (simple enough)
+> First project in Symfony4!!
 
 ## Table of contents
 * [General info](#general-info)
@@ -16,10 +16,10 @@ It's simple blog (will be in future :D)
 * Bootstrap
 
 ## TODO
-* page for editing posts
-* page for creating new posts
-* page for deleting posts
-* and... more but i need some time ;)
+* administrator panel
+* account management
+* adding new articles
+* and... more
 
 ## Status
 Project is: _in progress_
