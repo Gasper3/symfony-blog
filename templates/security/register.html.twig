@@ -1,0 +1,32 @@
+{% extends 'content_base.html.twig' %}
+
+{% block title %} Register {% endblock %}
+
+{% block content_body %}
+    <div class="container justify-content-center d-flex">
+        <form class="form-login" method="post">
+            <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+
+            <label for="inputEmail" class="sr-only">Email</label>
+            <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+
+            <label for="inputFirstName" class="sr-only">First name</label>
+            <input type="text" name="firstName" id="inputFirstName" class="form-control" placeholder="First name" required>
+
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" name="_remember_me"> Agree to terms
+                </label>
+            </div>
+
+            <button class="btn btn-md btn-primary" type="submit">
+                Register
+            </button>
+        </form>
+    </div>
+{% endblock %}
