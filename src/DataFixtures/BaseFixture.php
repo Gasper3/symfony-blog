@@ -28,22 +28,6 @@ abstract class BaseFixture extends Fixture
         $this->loadData($manager);
     }
 
-    /**
-     * Create many objects at once:
-     *
-     *      $this->createMany(10, function(int $i) {
-     *          $user = new User();
-     *          $user->setFirstName('Ryan');
-     *
-     *           return $user;
-     *      });
-     *
-     * @param int      $count
-     * @param string   $groupName Tag these created objects with this group name,
-     *                            and use this later with getRandomReference(s)
-     *                            to fetch only from this specific group.
-     * @param callable $factory
-     */
     protected function createMany(int $count, string $groupName, callable $factory)
     {
         for ($i = 0; $i < $count; $i++) {
