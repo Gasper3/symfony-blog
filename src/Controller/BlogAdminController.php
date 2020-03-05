@@ -7,6 +7,7 @@ namespace App\Controller;
 use App\Entity\Article;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Container\ContainerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -15,10 +16,19 @@ class BlogAdminController extends AbstractController
 {
     /**
      * @Route("/admin", name="admin_article")
+     * @IsGranted("ROLE_ADMIN")
      */
     public function index()
     {
         return $this->render('article_admin/index.html.twig');
+    }
+
+    /**
+     * @Route("/admin/article/create", name="create_article")
+     */
+    public function create()
+    {
+        return $this->render('article_admin/create.html.twig');
     }
 
     /**
@@ -28,24 +38,25 @@ class BlogAdminController extends AbstractController
     {
         //creating article
         $article = new Article();
-        $article->setTitle('Nowy wpis'.rand(1,100))
-            ->setContent('Treść')
+        $article->setTitle('New article'.rand(1,100))
+            ->setContent('Content')
             ->setPublishedAt(new \DateTime())
-            ->setSlug('wpis'.rand(1,100));
+            ->setSlug('article'.rand(1,100));
 
         $em->persist($article);
         $em->flush();
         return new Response(sprintf(
-            'Właśnie stworzyłeś artykuł o nazwie %s',
+            'You have created article: %s',
             $article->getSlug()
         ));
     }
 
     /**
-     * @Route("/admin/article/create", name="create_article")
+     * @Route("/admin/article/{id}/edit")
+     * @IsGranted("MANAGE", subject="article")
      */
-    public function create()
+    public function edit(Article $article)
     {
-        return $this->render('article_admin/create.html.twig');
+        dd($article);
     }
 }

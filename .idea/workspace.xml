@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="06d37cb4-dcc8-4e54-bab1-61148137636c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BlogAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogAdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/BaseFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/BaseFixture.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -301,7 +303,9 @@
       <workItem from="1582738053882" duration="17000" />
       <workItem from="1582740377238" duration="626000" />
       <workItem from="1582743756075" duration="31000" />
-      <workItem from="1583432413765" duration="341000" />
+      <workItem from="1583432413765" duration="1754000" />
+      <workItem from="1583434209624" duration="33000" />
+      <workItem from="1583434268378" duration="1236000" />
     </task>
     <servers />
   </component>
