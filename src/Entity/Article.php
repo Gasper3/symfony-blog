@@ -184,4 +184,16 @@ class Article
 
         return $this;
     }
+
+    public function isPublished(): bool
+    {
+        return $this->publishedAt !== null;
+    }
+
+    public function setIsPublished(bool $isPublished): self
+    {
+        $this->isPublished = $isPublished;
+
+        return $this;
+    }
 }

@@ -13,7 +13,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 
-class BlogController extends AbstractController
+class PagesController extends AbstractController
 {
     /**
      * @Route("/", name="homepage")

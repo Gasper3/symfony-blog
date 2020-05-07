@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06d37cb4-dcc8-4e54-bab1-61148137636c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/nauka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nauka.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BlogAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogAdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/BaseFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/BaseFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/article/space.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/article/space.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/user.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/user2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/user2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BlogAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleAdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article_admin/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article_admin/create.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article_admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article_admin/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/all_articles.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/all_articles.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +100,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
-      <path value="$PROJECT_DIR$/vendor/easycorp/easy-log-handler" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
@@ -139,6 +155,10 @@
       <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
       <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
     </include_path>
   </component>
   <component name="ProjectId" id="1PYSLxDoOkxsNcbXPX4sTHH8nEC" />
@@ -156,15 +176,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/security" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/assets/css" />
       <recent name="$PROJECT_DIR$/public/images/article" />
       <recent name="$PROJECT_DIR$/templates/security" />
       <recent name="$PROJECT_DIR$/templates/article_admin" />
-      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/security" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -305,7 +325,19 @@
       <workItem from="1582743756075" duration="31000" />
       <workItem from="1583432413765" duration="1754000" />
       <workItem from="1583434209624" duration="33000" />
-      <workItem from="1583434268378" duration="1236000" />
+      <workItem from="1583434268378" duration="1795000" />
+      <workItem from="1583778909175" duration="608000" />
+      <workItem from="1585250682656" duration="139000" />
+      <workItem from="1586681539437" duration="1801000" />
+      <workItem from="1586683361983" duration="1149000" />
+      <workItem from="1586685174049" duration="227000" />
+      <workItem from="1587209174746" duration="1792000" />
+      <workItem from="1587211258857" duration="2114000" />
+      <workItem from="1587213413342" duration="958000" />
+      <workItem from="1587569629311" duration="1202000" />
+      <workItem from="1587571439489" duration="1492000" />
+      <workItem from="1588077661731" duration="25000" />
+      <workItem from="1588875264365" duration="1134000" />
     </task>
     <servers />
   </component>

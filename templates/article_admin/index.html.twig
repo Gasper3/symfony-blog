@@ -4,6 +4,7 @@
 
 {% block content_body %}
     <h1>Admin Panel</h1>
-    <p><a href="{{ path('create_article') }}">Create Article</a></p>
+    <p><a href="{{ path('admin_article_list') }}">Article List</a></p>
+    <p><a href="{{ path('admin_article_new') }}">Create Article</a></p>
     <p><a href="{{ path('admin_comment') }}">Manage Comments</a></p>
 {% endblock %}
