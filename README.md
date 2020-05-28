@@ -18,7 +18,6 @@ It's simple blog (will be in future :D)
 ## TODO
 * administrator panel
 * account management
-* adding new articles
 * and... more
 
 ## Status
