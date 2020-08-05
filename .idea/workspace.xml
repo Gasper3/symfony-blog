@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06d37cb4-dcc8-4e54-bab1-61148137636c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/nauka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nauka.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +16,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -144,11 +143,16 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
       <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
       <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
     </include_path>
   </component>
   <component name="ProjectId" id="1PYSLxDoOkxsNcbXPX4sTHH8nEC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
@@ -172,18 +176,7 @@
       <recent name="$PROJECT_DIR$/templates/security" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -328,23 +321,48 @@
       <workItem from="1588952799520" duration="599000" />
       <workItem from="1590329695002" duration="45000" />
       <workItem from="1590694182471" duration="301000" />
+      <workItem from="1590696221085" duration="16000" />
+      <workItem from="1591125044913" duration="25000" />
+      <workItem from="1591300117885" duration="77000" />
+      <workItem from="1591536237058" duration="56000" />
+      <workItem from="1591537223112" duration="652000" />
+      <workItem from="1591638061953" duration="56000" />
+      <workItem from="1591638146299" duration="88000" />
+      <workItem from="1591638317058" duration="566000" />
+      <workItem from="1591638997412" duration="989000" />
+      <workItem from="1591640114986" duration="28000" />
+      <workItem from="1593018553478" duration="285000" />
+      <workItem from="1593018861207" duration="1639000" />
+      <workItem from="1593162120486" duration="19000" />
+      <workItem from="1593162346799" duration="190000" />
+      <workItem from="1593447797814" duration="75000" />
+      <workItem from="1593460843410" duration="18000" />
+      <workItem from="1593460950243" duration="39000" />
+      <workItem from="1593625299294" duration="280000" />
+      <workItem from="1593721190332" duration="70000" />
+      <workItem from="1593721462433" duration="26000" />
+      <workItem from="1594152502552" duration="121000" />
+      <workItem from="1594832556093" duration="1868000" />
+      <workItem from="1594916547517" duration="2117000" />
+      <workItem from="1595359145016" duration="1164000" />
+      <workItem from="1596473871429" duration="40000" />
+      <workItem from="1596474114064" duration="920000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
