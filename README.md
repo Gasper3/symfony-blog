@@ -9,7 +9,7 @@
 * [Contact](#contact)
 
 ## General info
-It's simple blog (will be in future :D)
+It's simple blog
 
 ## Technologies
 * Symfony 4
