@@ -7,8 +7,7 @@ namespace App\Controller;
 use App\Entity\Article;
 use App\Repository\ArticleRepository;
 use App\Repository\CommentRepository;
-use Knp\Bundle\MarkdownBundle\Helper\MarkdownHelper;
-use Knp\Bundle\MarkdownBundle\MarkdownParserInterface;
+use Michelf\MarkdownInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -30,8 +29,9 @@ class PagesController extends AbstractController
     /**
      * @Route("/article/{slug}", name="article")
      */
-    public function show(Article $article, MarkdownParserInterface $markdownParser)
+    public function show(Article $article)
     {
+//        dd($article->getContent());
         return $this->render('blog/show.html.twig', [
             'article' => $article,
         ]);

@@ -14,7 +14,7 @@ class ArticleFixture extends BaseFixture implements DependentFixtureInterface
         $this->createMany(10, 'main_articles', function($count) use ($manager) {
             $article = new Article();
             $article->setTitle($this->faker->sentence())
-                ->setContent($this->faker->text($maxNbChars=3000));
+                ->setContent($this->faker->paragraphs($nb = 3, $asText = true));
 
             // publish most articles
             if ($this->faker->boolean(70)) {
