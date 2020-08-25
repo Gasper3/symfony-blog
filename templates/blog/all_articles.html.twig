@@ -5,19 +5,24 @@
 {% block body %}
 {# TODO: change presentation of articles #}
     <div class="container">
-        <div class="row mx-auto">
+        <div class="row">
             {% for article in articles %}
-                <div class="col-md-6 article-container m-2">
-                    <div class="col-3 p-0">
-                        <img src="/build/images/article/{{ article.imageFileName }}" class="articleImg">
-                    </div>
-                    <div class="col-7">
-                        <a href="{{ path('article', {slug: article.slug}) }}">
-                            <span>{{ article.title }}</span>
-                        </a>
-                    </div>
-                    <div class="col-2 p-0">
-                        <span>{{ article.publishedAt|ago }}</span>
+                <div class="col-md-3 mt-3">
+                    <div class="article-container">
+                        <div class="p-0">
+                            <img src="/build/images/article/{{ article.imageFileName }}" class="articleImg">
+                        </div>
+                        <div class="m-1 article-link">
+                            <a href="{{ path('article', {slug: article.slug}) }}" class="stretched-link">
+                                <span>{{ article.title }}</span>
+                            </a>
+                        </div>
+                        <div class="article-author my-auto">
+                            <small>Author: {{ article.author }}</small>
+                        </div>
+                        <div class="mt-auto">
+                            <span>{{ article.publishedAt|ago }}</span>
+                        </div>
                     </div>
                 </div>
             {% endfor %}

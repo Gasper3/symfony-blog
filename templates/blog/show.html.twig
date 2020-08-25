@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="row mx-auto mt-3">
-        {{ article.content|markdown }}
+        {{ article.content|escape|markdown }}
     </div>
     <div class="row mx-auto font-weight-bold mt-4">
         {{ article.nonDeletedComments|length }} Comments
