@@ -31,7 +31,6 @@ class PagesController extends AbstractController
      */
     public function show(Article $article)
     {
-//        dd($article->getContent());
         return $this->render('blog/show.html.twig', [
             'article' => $article,
         ]);
