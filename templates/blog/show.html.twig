@@ -24,9 +24,6 @@
             <div class="col-md-8">
                 <div class="col-8">
                     <span class="font-weight-bold">{{ comment.authorName }}</span> about {{ comment.createdAt|ago }}
-                    {% if comment.isDeleted %}
-                        <span class="font-weight-bold">deleted</span>
-                    {% endif %}
                 </div>
                 <div class="col-12">{{ comment.content }}</div>
             </div>

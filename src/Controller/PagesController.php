@@ -43,6 +43,7 @@ class PagesController extends AbstractController
     public function showAll(ArticleRepository $repository)
     {
         $articles = $repository->orderByPublishedAt();
+
         return $this->render('blog/all_articles.html.twig', [
             'articles' => $articles,
         ]);
