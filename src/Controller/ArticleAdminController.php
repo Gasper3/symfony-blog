@@ -6,6 +6,7 @@ namespace App\Controller;
 
 use App\Entity\Article;
 use App\Form\ArticleFormType;
+use App\Helper\Article\ArticleFormHandler;
 use App\Repository\ArticleRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Container\ContainerInterface;
@@ -61,10 +62,31 @@ class ArticleAdminController extends AbstractController
      * @Route("/admin/article/{id}/edit", name="admin_article_edit")
      * @IsGranted("MANAGE", subject="article")
      */
-    public function edit(Article $article)
+    public function edit(Article $article, Request $request, EntityManagerInterface $em)
     {
-        // TODO: Make edit page
-        dd($article);
+        $form = $this->createForm(ArticleFormType::class, $article);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $article
+                ->setAuthor($this->getUser())
+                ->setImageFilename('space.jpg')
+            ;
+
+            $em->persist($article);
+            $em->flush();
+
+            $this->addFlash('success', 'Article Updated!');
+
+            return $this->redirectToRoute('admin_article_edit', [
+                'id' => $article->getId(),
+            ]);
+        }
+
+        return $this->render('article_admin/edit.html.twig', [
+            'article' => $article,
+            'articleForm' => $form->createView(),
+        ]);
     }
 
     /**
